@@ -199,3 +199,4 @@ Never commit `.env` or `.env.local` with real secrets.
 ## License
 
 Private MVP — hiring assessment submission.
+Saurabh Kumar
