@@ -105,7 +105,7 @@ npm run dev        # Terminal 3 → http://localhost:3000
 3. **`backend/.env`:**
 
 ```env
-PORT=4000
+PORT=<your_port>
 MONGODB_URI=mongodb+srv://USER:PASSWORD@cluster.mongodb.net/assignai?retryWrites=true&w=majority
 REDIS_URL=rediss://default:TOKEN@your-instance.upstash.io:6379
 GROQ_API_KEY=your_groq_api_key
