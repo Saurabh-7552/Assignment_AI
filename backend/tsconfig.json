@@ -9,10 +9,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "baseUrl": ".",
-    "paths": {
-      "@shared/*": ["../shared/types/*"]
-    }
+    "baseUrl": "."
   },
-  "include": ["src/**/*", "../shared/types/**/*"]
+  "include": ["src/**/*"]
 }
