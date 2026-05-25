@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f1f5f9;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --muted: #64748b;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.04);
+  --shadow-elevated: 0 4px 24px rgba(15, 23, 42, 0.06);
+  --shadow-shell: 0 8px 30px rgba(15, 23, 42, 0.06);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Page layout */
+.page-content {
+  @apply flex min-h-0 flex-1 flex-col overflow-auto px-4 py-5 sm:px-6 sm:py-6 lg:px-8;
+}
+
+.page-content--muted {
+  @apply bg-slate-50/90;
+}
+
+/* Surfaces */
+.surface-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgb(226 232 240 / 0.8);
+  background: var(--card);
+  box-shadow: var(--shadow-card);
+}
+
+.surface-card--interactive {
+  transition: all 0.2s ease-out;
+}
+
+.surface-card--interactive:hover {
+  border-color: rgb(226 232 240);
+  box-shadow: var(--shadow-elevated);
+}
+
+/* Typography helpers */
+.text-page-title {
+  @apply text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl;
+}
+
+.text-section-title {
+  @apply text-lg font-semibold tracking-tight text-slate-900;
+}
+
+.text-caption {
+  @apply text-sm text-slate-500 leading-relaxed;
+}
+
+@media print {
+  .paper-content {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+}
