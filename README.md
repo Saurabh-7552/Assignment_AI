@@ -11,6 +11,13 @@ AI-powered platform for educators to create structured assessment question paper
 | **AI** | Groq API — `llama-3.3-70b-versatile` (OpenAI-compatible SDK) |
 | **PDF** | Puppeteer (HTML → PDF) |
 
+##Demo 
+<img width="1912" height="877" alt="image" src="https://github.com/user-attachments/assets/409acd32-0580-4104-9ace-be3c3bc62a9e" />
+<img width="1897" height="862" alt="image" src="https://github.com/user-attachments/assets/305575dc-dd3c-4be7-9e8c-340140f53bce" />
+<img width="1910" height="876" alt="image" src="https://github.com/user-attachments/assets/0c9b3006-52d6-4025-8d55-18c3762d119d" />
+
+
+
 ## Architecture Overview
 
 ```mermaid
